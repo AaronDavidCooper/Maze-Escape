@@ -106,7 +106,7 @@ var chatResetTimer
     stroke(0)
     fill(255);
     textSize(15);
-    text(user.initials.toUpperCase(), user.x, user.y + 5);
+    text(user.initials, user.x, user.y + 5);
     if(user.lastSaid !== ""){
       chatResetTimer--;
       if(chatResetTimer > 0){
@@ -142,7 +142,7 @@ var chatResetTimer
           text(users[i].lastSaid, users[i].x, users[i].y-users[i].r * 1.5);
           fill(255);
           textSize(15);
-          text(users[i].initials.toUpperCase(), users[i].x, users[i].y + 5);
+          text(users[i].initials, users[i].x, users[i].y + 5);
         }
     }
 
